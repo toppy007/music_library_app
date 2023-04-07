@@ -1,0 +1,15 @@
+<!-- file: views/albums.erb -->
+
+<html>
+  <head></head>
+  <body>
+    <% @albums.each do |album| %>
+      <a href="/albums/<%= album.id %>">
+      <p> 
+        title:  <%= album.title %> 
+        release_year: <%= album.release_year %> 
+      </p>
+      </a>
+    <% end %>
+  </body>
+</html>

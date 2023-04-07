@@ -1,0 +1,15 @@
+<!-- file: views/artists.erb -->
+
+<html>
+  <head></head>
+  <body>
+    <% @artist.each do |artist| %>
+      <a href="/artists/<%= artist.id %>">
+      <p> 
+        name:  <%= artist.name %> 
+        genre:  <%= artist.genre %> 
+      </p>
+      </a>
+    <% end %>
+  </body>
+</html>
